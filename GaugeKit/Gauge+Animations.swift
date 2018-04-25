@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Gauge {
+@objc extension Gauge {
     public func animateRate(_ duration: TimeInterval, newValue: CGFloat, completion: @escaping (Bool) -> ()) -> Void {
         animationTimer.invalidate()
         
