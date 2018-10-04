@@ -16,6 +16,7 @@ public enum GaugeType: Int {
     case left
     case right
     case line
+    case rotated
     case custom
 }
 
@@ -176,7 +177,7 @@ open class Gauge: UIView {
     
     func getGauge(_ rotateAngle: Double = 0) -> CAShapeLayer {
         switch type {
-        case .left, .right:
+        case .left, .right, .rotated:
             return getHalfGauge(rotateAngle)
         case .circle:
             return getCircleGauge(rotateAngle)
@@ -192,7 +193,7 @@ open class Gauge: UIView {
         
         if (ringLayer != nil) {
             switch type {
-            case .left, .right:
+            case .left, .right, .rotated:
                 // For Half Gauge, you have to fill 50% of circle and round it wisely
                 let percentage = (rate / 2 / maxValue).truncatingRemainder(dividingBy: 0.5)
                 ringLayer.strokeEnd = (rate >= maxValue ? 0.5 : percentage + ((rate != 0 && percentage == 0) ? 0.5 : 0))
@@ -255,6 +256,12 @@ open class Gauge: UIView {
 //        layer.transform = CATransform3DScale(CATransform3DMakeRotation(CGFloat(M_PI_2), 0, 0, 1), -1, 1, 1)
         layer.transform = CATransform3DScale(layer.transform, -1, 1, 1)
 
+    }
+    
+    func rotateByHalf(_ layer: CALayer) {
+        //        layer.transform = CATransform3DScale(CATransform3DMakeRotation(CGFloat(M_PI_2), 0, 0, 1), -1, 1, 1)
+        layer.transform = CATransform3DMakeRotation(90.0 / 180.0 * .pi, 0.0, 0.0, 1.0)
+        
     }
 
     func reverseY(_ layer: CALayer) {
