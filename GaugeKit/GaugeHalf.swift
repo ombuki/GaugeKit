@@ -84,6 +84,9 @@ extension Gauge: GaugeHalf {
         }
         if type == .rotated {
             rotateByHalf(gaugeLayer)
+            if reverse {
+                reverseY(gaugeLayer)
+            }
         }
         return gaugeLayer
     }

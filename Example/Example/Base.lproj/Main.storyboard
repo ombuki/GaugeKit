@@ -98,8 +98,8 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ob-Uc-gqV" userLabel="CircleGauge" customClass="Gauge" customModule="GaugeKit">
-                                        <rect key="frame" x="148" y="180" width="104" height="160"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ob-Uc-gqV" userLabel="CircleGauge" customClass="Gauge" customModule="GaugeKit">
+                                        <rect key="frame" x="91.5" y="179.5" width="160" height="160"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="168" id="1me-xR-gTm"/>
@@ -201,6 +201,7 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="endColor">
                                                 <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="reverse" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -209,8 +210,8 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xql-cv-5KY" userLabel="Gauge Left" customClass="Gauge" customModule="GaugeKit">
-                                        <rect key="frame" x="91" y="-162" width="137" height="557"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xql-cv-5KY" userLabel="Gauge Left" customClass="Gauge" customModule="GaugeKit">
+                                        <rect key="frame" x="0.0" y="-19" width="137" height="557"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="XU6-iK-3MX"/>
@@ -234,7 +235,7 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="gaugeTypeInt">
-                                                <integer key="value" value="4"/>
+                                                <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="default">
@@ -386,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399.2" y="464.6176911544228"/>
+            <point key="canvasLocation" x="1400" y="465"/>
         </scene>
         <!--Apple Gauge View Controller-->
         <scene sceneID="MOc-Ds-zrX">
