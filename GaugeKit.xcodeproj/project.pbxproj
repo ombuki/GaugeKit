@@ -31,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		1C9404D01B31CF85001BF122 /* GaugeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GaugeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C9404D41B31CF85001BF122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C9404D51B31CF85001BF122 /* GaugeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaugeKit.h; sourceTree = "<group>"; };
 		1C9404DB1B31CF85001BF122 /* GaugeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaugeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9404E11B31CF85001BF122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		1C94051F1B31D1BE001BF122 /* CAShapeLayer+oval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+oval.swift"; sourceTree = "<group>"; };
 		1C9405201B31D1BE001BF122 /* Gauge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gauge.swift; sourceTree = "<group>"; };
 		1C9405211B31D1BE001BF122 /* GaugeCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeCircle.swift; sourceTree = "<group>"; };
+		67FBFA9B220ACD0A00B20B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		850835531CAE20BE001A0DDB /* UIColor+Blend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Blend.swift"; sourceTree = "<group>"; };
 		856D35171CACBE930007D5C6 /* Gauge+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gauge+Animations.swift"; sourceTree = "<group>"; };
 		D66F53D8674BBD2D847BDB75 /* GaugeLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaugeLine.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		1C9404D31B31CF85001BF122 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1C9404D41B31CF85001BF122 /* Info.plist */,
+				67FBFA9B220ACD0A00B20B17 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
